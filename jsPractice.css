@@ -1,0 +1,28 @@
+body{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 41, 41); 
+}
+button{
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: rgb(3, 41, 41);
+    font-weight: bold;
+    font-variant-caps: unicase;
+    border: 0.09rem solid  rgb(3, 41, 41); 
+}
+button:hover{
+    cursor: pointer;
+    border-radius: 0rem;
+    background-color:  rgb(3, 41, 41);
+    color: rgb(255, 255, 255);
+}
+p{
+    font-size: 200%;
+}
+h1{
+    text-align: center;
+}
