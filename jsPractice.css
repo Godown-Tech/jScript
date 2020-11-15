@@ -1,4 +1,6 @@
 body{
+    width: 100%;
+    height: 100%;
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(3, 41, 41); 
@@ -8,51 +10,25 @@ button{
     height: auto;
     padding: 0.5rem;
     border-radius: 0.3rem;
-    background-color: white;
+    background-color: rgb(218, 216, 216);
     color: rgb(3, 41, 41);
     font-weight: bold;
-    font-variant-caps: unicase;
-    border: 0.09rem solid  rgb(3, 41, 41);
+    border: 0px solid  rgb(3, 41, 41);
     display: block;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 button:hover{
     cursor: pointer;
     border-radius: 0rem;
-    background-color:  rgb(3, 41, 41);
+    background-color:  #1c1f44;
     color: rgb(255, 255, 255);
+    
 }
 p{
     font-size: 200%;
 }
 h1{
     text-align: center;
+    color: #1c1f44;
 }
 
-table {
-    display: none;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table td, table th {
-    border: 1px solid #ddd;
-    padding: 16px;
-}
-
-table tr:nth-child(even){background-color: #f2f2f2;}
-
-table tr:hover {background-color: #ddd;}
-
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
-table tr td img{
-    width: 150px;
-    height: 80px;
-    alt: car-image;
-}

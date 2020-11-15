@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Practice2</title>
-    <link rel="stylesheet" href="./jsPractice.css" type="text/css">
+    <link rel="stylesheet" href="./jsPractice2.css" type="text/css">
 </head>
 <body>
      <!-- A window Alert displaying "Are you ready to learn Javascript? -->
 
     <!-- IMPLEMETATION OF JAVASCRIPT'S LESSONS -->
-    <h1>JAVASCRIPT THIRD ASSIGNMENT</h1>
+    <div class="heading">
+      <h1>JAVASCRIPT THIRD ASSIGNMENT</h1>
+    </div>
    
     <!-- A button to display a table containing countries' data onclick -->
-    <button type="button" onclick="country()">CLICK TO VIEW COUNTRIES DATA</button><br>
+    <div class="content"><button type="button" onclick="countries()">CLICK TO VIEW COUNTRIES DATA</button><br><br><br><br>
     <table id="showtable">
         <caption>A TABLE SHOWING COUNTRIES' DATA</caption>
         <tr>
@@ -24,79 +26,79 @@
           <th>PRESIDENT</th>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Nigeria</td>
-          <td>Abuja</td>
-          <td>Naira</td>
-          <td>Mohammadu Buhari</td>
+          <td id="serial1"></td>
+          <td id="co1"></td>
+          <td id="ca1"></td>
+          <td id="cu1"></td>
+          <td id="pr1"></td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>Egypt</td>
-          <td>Cairo</td>
-          <td>Pound</td>
-          <td>Mohamed Morsi</td>
+          <td id="serial2"></td>
+          <td id="co2"></td>
+          <td id="ca2"></td>
+          <td id="cu2"></td>
+          <td id="pr2"></td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>China</td>
-          <td>Beijing</td>
-          <td>Renminbi-yan</td>
-          <td>Xi Jinping</td>
+          <td id="serial3"></td>
+          <td id="co3"></td>
+          <td id="ca3"></td>
+          <td id="cu3"></td>
+          <td id="pr3"></td>
         </tr>
         <tr>
-          <td>4</td>
-          <td>Germany</td>
-          <td>Berlin</td>
-          <td>Euro</td>
-          <td>Joachim Gauck</td>
+          <td id="serial4"></td>
+          <td id="co4"></td>
+          <td id="ca4"></td>
+          <td id="cu4"></td>
+          <td id="pr4"></td>
         </tr>
         <tr>
-          <td>5</td>
-          <td>France</td>
-          <td>Paris</td>
-          <td>Euro</td>
-          <td>Francois Hollande</td>
+          <td id="serial5"></td>
+          <td id="co5"></td>
+          <td id="ca5"></td>
+          <td id="cu5"></td>
+          <td id="pr5"></td>
         </tr>
         <tr>
-          <td>6</td>
-          <td>Greece</td>
-          <td>Athens</td>
-          <td>Euro</td>
-          <td>Karolos Papoulias</td>
+          <td id="serial6"></td>
+          <td id="co6"></td>
+          <td id="ca6"></td>
+          <td id="cu6"></td>
+          <td id="pr6"></td>
         </tr>
         <tr>
-          <td>7</td>
-          <td>India</td>
-          <td>New Delhi</td>
-          <td>rupee</td>
-          <td>Pranab Mukherjee</td>
+          <td id="serial7"></td>
+          <td id="co7"></td>
+          <td id="ca7"></td>
+          <td id="cu7"></td>
+          <td id="pr7"></td>
         </tr>
         <tr>
-          <td>8</td>
-          <td>Iran</td>
-          <td>Techran</td>
-          <td>Iranian Rial</td>
-          <td>Mahmoud Ahmadinejad</td>
+          <td id="serial8"></td>
+          <td id="co8"></td>
+          <td id="ca8"></td>
+          <td id="cu8"></td>
+          <td id="pr8"></td>
         </tr>
         <tr>
-          <td>9</td>
-          <td>Japan</td>
-          <td>Tokyo</td>
-          <td>Yen</td>
-          <td>Yoshihiko</td>
+          <td id="serial9"></td>
+          <td id="co9"></td>
+          <td id="ca9"></td>
+          <td id="cu9"></td>
+          <td id="pr9"></td>
         </tr>
         <tr>
-          <td>10</td>
-          <td>Italy</td>
-          <td>Rome</td>
-          <td>Euro</td>
-          <td>Giorgio Napolitano</td>
+          <td id="serial10"></td>
+          <td id="co10"></td>
+          <td id="ca10"></td>
+          <td id="cu10"></td>
+          <td id="pr10"></td>
         </tr>
       </table><br><br>
       
     <!-- A button to display a table containing Cars' data onclick -->
-    <button type="button" onclick="cars()">CLICK TO VIEW CARS DATA</button><br>
+    <button type="button" onclick="cars()" id="button2">CLICK TO VIEW CARS DATA</button><br><br><br><br>
     <table id="showcars">
         <caption>A TABLE SHOWING CARS' DATA</caption>
         <tr>
@@ -107,76 +109,78 @@
             <th>WEIGHT</th>
           </tr>
           <tr>
-            <td>1</td>
-            <td>Van</td>
-            <td><img src="./cars/2011-dodge-grand-caravan-Van.jpg"></td>
-            <td>2011-dodge-grand-caravan</td>
-            <td>890kg</td>
+            <td id="seriala"></td>
+            <td id="naa"></td>
+            <td><img id="ima"></td>
+            <td id="moa"></td>
+            <td id="wea"></td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Truck</td>
-            <td><img src="./cars/2015-ford-f-150 Pick-Up Truck.jpg"></td>
-            <td>2015-ford-f-150 Pick-Up</td>
-            <td>590kg</td>
+            <td id="serialb"></td>
+            <td id="nab"></td>
+            <td><img id="imb"></td>
+            <td id="mob"></td>
+            <td id="web"></td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>BWN</td>
-            <td><img src="./cars/20201 BMW 430.png"></td>
-            <td>20201 BMW</td>
-            <td>950kg</td>
+            <td id="serialc"></td>
+            <td id="nac"></td>
+            <td><img id="imc"></td>
+            <td id="moc"></td>
+            <td id="wec"></td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>Audi</td>
-            <td><img src="./cars/2021 Audi RS 5.webp"></td>
-            <td>2021 Audi RS 5</td>
-            <td>645kg</td>
+            <td id="seriald"></td>
+            <td id="nad"></td>
+            <td><img id="imd"></td>
+            <td id="mod"></td>
+            <td id="wed"></td>
           </tr>
           <tr>
-            <td>5</td>
-            <td>Trailblazer</td>
-            <td><img src="./cars/2021 Chevrolet Trailblazer.webp"></td>
-            <td>2021 Chevrolet Trailblazer</td>
-            <td>600kg</td>
+            <td id="seriale"></td>
+            <td id="nae"></td>
+            <td><img id="ime"></td>
+            <td id="moe"></td>
+            <td id="wee"></td>
           </tr>
           <tr>
-            <td>6</td>
-            <td>Honda</td>
-            <td><img src="./cars/2021 Honda Odyssey.jpg"></td>
-            <td>2021 Honda Odyssey</td>
-            <td>750kg</td>
+            <td id="serialf"></td>
+            <td id="naf"></td>
+            <td><img id="imf"></td>
+            <td id="mof"></td>
+            <td id="wef"></td>
           </tr>
           <tr>
-            <td>7</td>
-            <td>Nissan</td>
-            <td><img src="./cars/2021 Nissan Rogue.jpg"></td>
-            <td>2021 Nissan Rogue</td>
-            <td>640kg</td>
+            <td id="serialg"></td>
+            <td id="nag"></td>
+            <td><img id="img"></td>
+            <td id="mog"></td>
+            <td id="weg"></td>
           </tr>
           <tr>
-            <td>8</td>
-            <td>Aston</td>
-            <td><img src="./cars/Aston Martin 2020.jpg"></td>
-            <td>Aston Martin 2020</td>
-            <td>800kg</td>
+            <td id="serialh"></td>
+            <td id="nah"></td>
+            <td><img id="imh"></td>
+            <td id="moh"></td>
+            <td id="weh"></td>
           </tr>
           <tr>
-            <td>9</td>
-            <td>Diablo SV</td>
-            <td><img src="./cars/Diablo SV 2020.jpg"></td>
-            <td>Diablo SV 2020</td>
-            <td>759kg</td>
+            <td id="seriali"></td>
+            <td id="nai"></td>
+            <td><img id="imi"></td>
+            <td id="moi"></td>
+            <td id="wei"></td>
           </tr>
           <tr>
-            <td>10</td>
-            <td>Ferruccio</td>
-            <td><img src="./cars/Ferruccio Lambrorghini 2020.jpg"></td>
-            <td>Ferruccio Lambrorghini 2020</td>
-            <td>900kg</td>
+            <td id="serialj"></td>
+            <td id="naj"></td>
+            <td><img id="imj"></td>
+            <td id="moj"></td>
+            <td id="wej"></td>
           </tr>
-    </table>
+    </table><br><br>
+  </div>
+    
     <script src="./jsPractice2.js"></script>
 </body>
 </html>
