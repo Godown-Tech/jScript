@@ -1,7 +1,21 @@
 // A button for displaying a set of countries' data on mouse clcik
 function countries () {
-    document.getElementById("showtable").style.display = "block";
-}
+    var x = document.getElementById("showtable");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } 
+    else {
+      x.style.display = "none";
+    }
+  }
+
+// Table1 Header
+var header1 = {col1:"S/N", col2:"COUNTRY", col3:"CAPITAL", col4:"CURRENCY", col5:"PRESIDENT"}
+document.getElementById("sn").innerHTML=header1.col1
+document.getElementById("cn").innerHTML=header1.col2
+document.getElementById("cap").innerHTML=header1.col3
+document.getElementById("cur").innerHTML=header1.col4
+document.getElementById("pre").innerHTML=header1.col5
 // First Row
 var row1 = {SN:"1", COUNTRY:"Nigeria", CAPITAL:"Abuja", CURRENCY:"Naira", PRESIDENT:"Mohammadu Buhari"};
 document.getElementById("serial1").innerHTML=row1.SN
@@ -85,8 +99,21 @@ document.getElementById("pr10").innerHTML=row10.PRESIDENT
 
 // A button for displaying a set of Cars' data on mouse clcik
 function cars () {
-    document.getElementById("showcars").style.display = "block";
+    var y = document.getElementById("showcars");
+    if (y.style.display === "none"){
+        y.style.display = "block"
+    }
+    else {y.style.display = "none"}
 }
+
+// Table1 Header
+var header2 = {cola:"S/N", colb:"CAR NAME", colc:"IMAGE", cold:"CAR MODEL", cole:"WEIGHT"}
+document.getElementById("sn1").innerHTML=header2.cola
+document.getElementById("cn1").innerHTML=header2.colb
+document.getElementById("cap1").innerHTML=header2.colc
+document.getElementById("cur1").innerHTML=header2.cold
+document.getElementById("pre1").innerHTML=header2.cole
+
 // First Row
 var rowa = {SN:"1", NAME:"Van", MODEL:"2011-dodge-grand-caravan", WEIGHT:"890kg"};
 document.getElementById("seriala").innerHTML=rowa.SN;
@@ -215,4 +242,114 @@ var str = "I am Mr. Bright"
 var res = str.slice(-7);
 console.log(res)
 
+/*The substring() Method
+substring() is similar to slice().
 
+The difference is that substring() cannot accept negative indexes.*/
+var str = "I am Mr. Bright"
+var res = str.substring(4, 7);
+console.log(res)
+
+/*The substr() Method
+substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.*/
+
+var str = "Mr. Bright continue learning"
+var res = str.substr(4, 7);
+console.log(res)
+
+// If you omit the second parameter, substr() will slice out the rest of the string.
+var str = "Mr. Bright continue learning"
+var res = str.substr(4);
+console.log(res)
+
+// If the first parameter is negative, the position counts from the end of the string.
+var str = "Mr. Bright continue learning"
+var res = str.substr(-8);
+console.log(res)
+
+/*Replacing String Content
+// The replace() method replaces a specified value with another value in a string:
+By default, the replace() function replaces only the first match:*/
+var str = "Mr. Bright continue learning"
+var re = str.replace("Bright", "Smart");
+console.log(re)
+
+// By default, the replace() function is case sensitive.
+var str = "Mr. Bright continue learning"
+var re = str.replace("bright", "Smart");
+console.log(re)
+
+// To replace case insensitive, use a regular expression with an /i flag (insensitive):
+var str = "Mr. Bright continue learning"
+var re = str.replace(/bright/i, "Smart");
+console.log(re)
+
+// To replace all matches, use a regular expression with a /g flag (global match):
+var str = "Mr. Bright remain bright and continue learning"
+var re = str.replace(/bright/gi, "Smart");
+console.log(re)
+
+/*Converting to Upper and Lower Case
+A string is converted to upper case with toUpperCase():*/
+var txt = "Mr. Bright you can do better!"
+var x = txt.toLocaleUpperCase();
+var y = x.toLowerCase();
+console.log(x);
+console.log(y)
+
+/*The concat() Method
+concat() joins two or more strings:*/
+var x = "Java"
+var y = "Script!"
+var z = x.concat(y);
+console.log(z)
+
+// The concat() method can be used instead of the plus operator. These two lines do the same:
+var x = "Java"
+var y = "Script!"
+var z = x + y;
+console.log(z)
+
+/*String.trim()
+String.trim() removes whitespace from both sides of a string.*/
+var be = "   Advancing Coder    "
+alert(be.trim())
+
+/*Extracting String Characters
+There are 2 safe methods for extracting string characters:
+
+charAt(position)
+charCodeAt(position)
+The charAt() Method
+The charAt() method returns the character at a specified index (position) in a string:*/
+var str = "Advancing Coder"
+var c = str.charAt(0);
+console.log(c)
+
+/*The charCodeAt() Method
+The charCodeAt() method returns the unicode of the character at a specified index in a string:*/
+var str = "Advancing Coder"
+console.log(str.charCodeAt(0))
+
+// Accessing a String as an Array is Unsafe
+var str = "Advancing Coder"
+ str[0];
+console.log(str[0])
+/*Converting a String to an Array
+A string can be converted to an array with the split() method:*/
+var str = "Bright,Smart,Star";
+var arr = str.split(",");
+console.log(arr[0])
+
+/*If the separator is omitted, the returned array will contain the whole string in index [0].
+
+If the separator is "", the returned array will be an array of single characters:*/
+var str = "Bright,Smart,Star";
+var arr = str.split("");
+console.log(arr[0])
+
+var str = "Bright,Smart,Star";
+var arr = str.split();
+console.log(arr[0])

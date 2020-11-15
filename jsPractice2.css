@@ -3,7 +3,7 @@ body{
     height: 100%;
     background: linear-gradient(45deg, #49a09d, #5f2c82);
 	font-family: sans-serif;
-	font-weight: 100;
+    font-weight: 100;
 }
 .content{
     width: 100%;
@@ -43,16 +43,14 @@ button{
 button:hover{
     cursor: pointer;
     border-radius: 0rem;
-    background-color: rgb(6, 8, 26);
-    color: #0011fa;
-    
+    background: linear-gradient(45deg, #49a09d,#5f2c82);   
 }
 p{
     font-size: 200%;
 }
 h1{
     text-align: center;
-    color: #0011fa;
+    color:  #5f2c82;
 }
 
 table {
@@ -91,6 +89,15 @@ table tr td img{
     alt: car-image;
 }
 caption{
+    background: linear-gradient(45deg, #5f2c82),#49a09d;
+    color:  #5f2c82;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.de-end{
+    width: 100%;
+    border-top: 2px double #5f2c82;
+    position: absolute;
+    top: 450vh;
+    left: -1%;
+    text-align: center;
+}
