@@ -1,12 +1,6 @@
 // A button for displaying a set of countries' data on mouse clcik
 function countries () {
-    var x = document.getElementById("showtable");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } 
-    else {
-      x.style.display = "none";
-    }
+    var x = document.getElementById("showtable").style.display="block";
   }
 
 // Table1 Header
@@ -99,11 +93,7 @@ document.getElementById("pr10").innerHTML=row10.PRESIDENT
 
 // A button for displaying a set of Cars' data on mouse clcik
 function cars () {
-    var y = document.getElementById("showcars");
-    if (y.style.display === "none"){
-        y.style.display = "block"
-    }
-    else {y.style.display = "none"}
+    var y = document.getElementById("showcars").style.display = "block";
 }
 
 // Table1 Header
@@ -353,3 +343,27 @@ console.log(arr[0])
 var str = "Bright,Smart,Star";
 var arr = str.split();
 console.log(arr[0])
+
+// Escape sequences/Character escaping
+// backslash (\) escape character
+// This turns special characters into string characters
+// Single Quotes
+var x = "The Bible says \'The Spirit is willing but the body is weak!\' Do you believe?";
+console.log(x)
+
+// Double Quotes
+var x = "The Bible says \"The Spirit is willing but the body is weak!\" Do you believe?";
+console.log(x)
+
+// The sequence \\  inserts a backslash in a string:
+// Date using backslash
+var x = "18\\11\\2020";
+console.log(x)
+
+// other escape sequences that are valid in JavaScript
+// To enter a new Line
+var x = "I love the Bible";
+var y = "You love the Bible";
+var z = "We love the Bible";
+console.log(x,'\n', + y,'\n', + z,'\n')
+
