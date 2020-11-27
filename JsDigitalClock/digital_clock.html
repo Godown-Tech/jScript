@@ -30,8 +30,8 @@
         day_night = "PM"
         hours = hours - 12;
     }
-    if(hours < 10){
-        hours = hours - "3" ;
+    if(hours < 10, hours > 10){
+        hours = "0" + hours;
     }
     if(minutes < 10){
         minutes = "0" + minutes;
@@ -41,8 +41,15 @@
     }
     time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
 });
-var d = new Date();
-document.getElementById("date").innerHTML = d.toDateString();
+// var d = new Date();
+// document.getElementById("date").innerHTML = d.toDateString();
+var now = new Date();
+var days = ['Sun','Mon','Tues','Wed','Thur','Fri','Sat'];
+var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+
+var day = days[ now.getDay() ];
+var month = months[ now.getMonth() ];
+document.getElementById("date").innerHTML = day + " " + now.getDate() + "," + " " + month;
 </script>
 </body>
 </html>

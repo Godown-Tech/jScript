@@ -22,7 +22,7 @@ background: #000;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
-}
+} 
 .wrapper{
     height: 150px;
     width: 360px;
@@ -84,4 +84,4 @@ background: #000;
     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;}
