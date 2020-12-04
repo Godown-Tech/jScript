@@ -19,37 +19,6 @@
     <span></span>
 </div>
 
-<script>
-    setInterval(()=>{
-    var date = new Date();
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
-    var day_night ="AM"
-    if(hours > 12){
-        day_night = "PM"
-        hours = hours - 12;
-    }
-    if(hours < 10, hours > 10){
-        hours = "0" + hours;
-    }
-    if(minutes < 10){
-        minutes = "0" + minutes;
-    }
-    if(seconds < 10){
-        seconds = "0" + seconds;
-    }
-    time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
-});
-// var d = new Date();
-// document.getElementById("date").innerHTML = d.toDateString();
-var now = new Date();
-var days = ['Sun','Mon','Tues','Wed','Thur','Fri','Sat'];
-var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
-
-var day = days[ now.getDay() ];
-var month = months[ now.getMonth() ];
-document.getElementById("date").innerHTML = day + " " + now.getDate() + "," + " " + month;
-</script>
+<script src="./digital_clock.js"></script>
 </body>
 </html>

@@ -23,9 +23,10 @@ background: #000;
     font-weight: 600;
     letter-spacing: 1px;
 } 
+/* The overall container of the clock */
 .wrapper{
-    height: 150px;
-    width: 360px;
+    height: 180px;
+    width: 390px;
     cursor: default;
     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
     border-radius: 10px;
@@ -72,7 +73,7 @@ background: #000;
    filter: blur(10px);
 }
 .wrapper span:last-child{
-    filter: blur(10px);
+    filter: blur(15px);
  }
  .wrapper .display #date{
     line-height: 30px;

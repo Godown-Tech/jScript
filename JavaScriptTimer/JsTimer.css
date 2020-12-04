@@ -1,6 +1,6 @@
 body{
     background: #09b77c;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Allerta Stencil', sans-serif;
     height: 100%;
 
 }
@@ -13,18 +13,43 @@ body{
 h1, 
 h2, 
 h3{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Allerta Stencil', sans-serif;
     font-weight: 100;
     text-transform: capitalize;
     font-size: 2.6rem;
 }
-#hours,
-#minutes,
-#seconds, 
-#tens {
-    font-size: 2em;
+h2{
+    font-size: 2rem;
+    animation: move 11s linear 2s infinite alternate;
 }
-button{
+@keyframes move {
+    from {
+        margin-left: -5%;
+        color: orange;
+      }
+      to {
+        margin-left: 10%;
+        color: white
+      }
+}
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+#hours, #minutes, #seconds {
+    font-size: 6em;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+#tens {
+    color: rgb(241, 241, 241);
+    font-size: 4em;
+}
+#seperator{
+    text-align: center;
+    font-size: 5em;
+    color: rgb(251, 243, 243);
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.start-button{
     width: 150px;
     height: 50px;
     background: transparent;
@@ -33,10 +58,39 @@ button{
     border-radius: 5px;
     margin-right: 10px;
     outline: none;
+    font-size: 120%;
 }
-button:hover{
+.start-button:hover{
     background: white;
     color: #09b77c;
-    font-weight: 800;
-    text-transform: capitalize;
+}
+.stop-button{
+    width: 150px;
+    height: 50px;
+    background: #f0a606;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 120%;
+}
+.stop-button:hover{
+    background: #ffffff;
+    color:#f0a606;
+}
+.reset-button{
+    width: 150px;
+    height: 50px;
+    background:#f80000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 120%;
+}
+.reset-button:hover{
+    background: #ffffff;
+    color:#f80000;
 }
